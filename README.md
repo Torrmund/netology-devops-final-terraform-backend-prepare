@@ -12,29 +12,29 @@
 
 ## Requirements
 
-| Name                                                                       | Version  |
-| -------------------------------------------------------------------------- | -------- |
-| `<a name="requirement_terraform"></a>` [terraform](#requirement\_terraform) | ~>1.11.0 |
-| `<a name="requirement_local"></a>` [local](#requirement\_local)             | 2.5.2    |
-| `<a name="requirement_random"></a>` [random](#requirement\_random)          | 3.7.2    |
-| `<a name="requirement_yandex"></a>` [yandex](#requirement\_yandex)          | 0.140.1  |
+| Name                              | Version  |
+| --------------------------------- | -------- |
+| [terraform](#requirement\_terraform) | ~>1.11.0 |
+| [local](#requirement\_local)         | 2.5.2    |
+| [random](#requirement\_random)       | 3.7.2    |
+| [yandex](#requirement\_yandex)       | 0.140.1  |
 
 ## Providers
 
-| Name                                                        | Version |
-| ----------------------------------------------------------- | ------- |
-| `<a name="provider_local"></a>` [local](#provider\_local)    | 2.5.2   |
-| `<a name="provider_yandex"></a>` [yandex](#provider\_yandex) | 0.140.1 |
+| Name                      | Version |
+| ------------------------- | ------- |
+| [local](#provider\_local)    | 2.5.2   |
+|  [yandex](#provider\_yandex) | 0.140.1 |
 
 ## Modules
 
-| Name                                                                                    | Source                     | Version |
-| --------------------------------------------------------------------------------------- | -------------------------- | ------- |
-| `<a name="module_compute_instance"></a>` [compute\_instance](#module\_compute\_instance) | ./modules/compute_instance | n/a     |
-| `<a name="module_kms"></a>` [kms](#module\_kms)                                          | ./modules/kms              | n/a     |
-| `<a name="module_s3"></a>` [s3](#module\_s3)                                             | ./modules/s3               | n/a     |
-| `<a name="module_service_account"></a>` [service\_account](#module\_service\_account)    | ./modules/sa               | n/a     |
-| `<a name="module_vpc"></a>` [vpc](#module\_vpc)                                          | ./modules/vpc              | n/a     |
+| Name                                         | Source                     | Version |
+| -------------------------------------------- | -------------------------- | ------- |
+| [compute\_instance](#module\_compute\_instance) | ./modules/compute_instance | n/a     |
+| [kms](#module\_kms)                             | ./modules/kms              | n/a     |
+| [s3](#module\_s3)                               | ./modules/s3               | n/a     |
+| [service\_account](#module\_service\_account)   | ./modules/sa               | n/a     |
+| [vpc](#module\_vpc)                             | ./modules/vpc              | n/a     |
 
 ## Resources
 
@@ -45,15 +45,15 @@
 
 ## Inputs
 
-| Name                                                                              | Description | Type       | Default                | Required |
-| --------------------------------------------------------------------------------- | ----------- | ---------- | ---------------------- | :------: |
-| `<a name="input_bucket_name"></a>` [bucket\_name](#input\_bucket\_name)            | n/a         | `string` | `"tf-state"`         |    no    |
-| `<a name="input_cloud_id"></a>` [cloud\_id](#input\_cloud\_id)                     | n/a         | `any`    | n/a                    |   yes   |
-| `<a name="input_folder_id"></a>` [folder\_id](#input\_folder\_id)                  | n/a         | `any`    | n/a                    |   yes   |
-| `<a name="input_public_ssh_key"></a>` [public\_ssh\_key](#input\_public\_ssh\_key) | n/a         | `any`    | n/a                    |   yes   |
-| `<a name="input_sa_key_file"></a>` [sa\_key\_file](#input\_sa\_key\_file)          | n/a         | `any`    | n/a                    |   yes   |
-| `<a name="input_vm_name"></a>` [vm\_name](#input\_vm\_name)                        | n/a         | `string` | `"toolbox-instance"` |    no    |
-| `<a name="input_zone"></a>` [zone](#input\_zone)                                   | n/a         | `string` | `"ru-central1-d"`    |    no    |
+| Name                                      | Description | Type       | Default                | Required |
+| ----------------------------------------- | ----------- | ---------- | ---------------------- | :------: |
+| [bucket\_name](#input\_bucket\_name)         | n/a         | `string` | `"tf-state"`         |    no    |
+| [cloud\_id](#input\_cloud\_id)               | n/a         | `any`    | n/a                    |   yes   |
+| [folder\_id](#input\_folder\_id)             | n/a         | `any`    | n/a                    |   yes   |
+| [public\_ssh\_key](#input\_public\_ssh\_key) | n/a         | `any`    | n/a                    |   yes   |
+| [sa\_key\_file](#input\_sa\_key\_file)       | n/a         | `any`    | n/a                    |   yes   |
+| [vm\_name](#input\_vm\_name)                 | n/a         | `string` | `"toolbox-instance"` |    no    |
+| [zone](#input\_zone)                         | n/a         | `string` | `"ru-central1-d"`    |    no    |
 
 ## Outputs
 
