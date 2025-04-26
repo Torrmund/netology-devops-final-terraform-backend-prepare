@@ -11,5 +11,5 @@
 # own secret vars store.
 personal.auto.tfvars
 
-# service account credentials
-.aws
+# Generated credentials
+.aws/

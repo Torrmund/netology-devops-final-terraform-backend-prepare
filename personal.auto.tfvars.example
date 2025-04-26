@@ -1,0 +1,4 @@
+cloud_id    = "<CLOUD_ID>"
+folder_id   = "<FOLDER_ID>"
+sa_key_file = "<PATH/TO/AUTHORIZED_KEY>"
+public_ssh_key = "<PUBLIC_SSH_KEY>"
